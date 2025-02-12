@@ -7,7 +7,7 @@ const Checkout = () => {
     }
 
     const createOrder = () => {
-        fetch('http://localhost:3000/create-checkout-session', {
+        fetch(`${import.meta.env.VITE_SERVER_URL}/create-checkout-session`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
